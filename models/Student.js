@@ -7,9 +7,6 @@ name: {
 },
 age: Number,
 course: String,
-createAt: {
-    type: Date,
-    default: Date.now,
-},
-});
+
+}, { timestamps: true });
 export default mongoose.model("Student",studentSchema);
