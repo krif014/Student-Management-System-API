@@ -1,16 +1,85 @@
-# React + Vite
+# 🎓 Student Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **Student Management System frontend** built with **React** and **Tailwind CSS**, connected to a backend API.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new students
+* ✏️ Edit student details inline
+* 👀 View individual student details
+* ❌ Delete students
+* 🔄 Real-time updates from backend API
+* ⚡ Clean and simple UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React (Hooks)**
+* **Axios** (API requests)
+* **Tailwind CSS** (styling)
+
+
+## 📂 Project Structure
+
+src/
+ ├── App.jsx
+ ├── index.css
+ └── main.jsx
+
+
+## 🔌 API Integration
+
+This frontend connects to a backend running on:
+
+http://localhost:5000/api/students
+
+Make sure your backend server is running before starting the frontend.
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+bash
+git clone https://github.com/your-username/student-frontend.git
+cd student-frontend
+
+### 2. Install dependencies
+bash
+npm install
+
+### 3. Run the project
+bash
+npm run dev
+
+## ⚠️ Notes
+
+* This project currently **does not include responsive design**.
+* It is optimized for **desktop view**.
+* Future improvements may include:
+
+  * 📱 Mobile responsiveness
+  * 🎨 UI/UX enhancements
+  * 🔐 Authentication
+  * 📊 Dashboard features
+
+## 💡 What I Learned
+
+* Managing multiple forms in React
+* Handling CRUD operations with Axios
+* Conditional rendering (view/edit modes)
+* State management using React Hooks
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+
+## ⭐ Support
+
+If you like this project, please consider giving it a **star ⭐** on GitHub — it really helps!
+
+
+## 📄 License
+
+This project is open source and available under the MIT License.
