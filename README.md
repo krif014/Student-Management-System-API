@@ -1,143 +1,178 @@
-🎓 Student Management System API
+🎓 Student Management System (Full Stack)
 
-A RESTful API built with Node.js, Express, and MongoDB to manage student data.
-This project demonstrates CRUD operations, API documentation with Swagger, and a clean backend structure.
+A modern Full-Stack Student Management System built with Node.js, Express, MongoDB (Backend) and React + Tailwind CSS (Frontend).
 
-🚀 Features
+It demonstrates RESTful API development, CRUD operations, and clean UI integration, with full API documentation using Swagger.
 
-✅ Create a new student
+🏷️ Tech Stack Badges
+<p align="left"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" /> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" /> </p>
 
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwindcss&logoColor=white)
+
+
+
+
+
+🖼️ Project Preview
+📊 Frontend UI Preview
+
+Add your screenshot here (recommended)
+
+![Frontend Preview](./assets/frontend-preview.png)
+📚 Swagger API Preview
+
+Add your Swagger UI screenshot here
+
+![Swagger Preview](./assets/swagger-preview.png)
+
+
+
+
+✨ Features
+🔹 Backend (API)
+➕ Create a student
 📄 Get all students
-
-🔍 Get a single student by ID
-
+🔍 Get student by ID
 ✏️ Update student details
-
 ❌ Delete a student
-
-📚 API documentation with Swagger
-
+📚 Swagger API documentation
 🌐 CORS enabled
-
-⚙️ Environment configuration with dotenv
-
+⚙️ Environment configuration
+🔹 Frontend
+➕ Add new students
+✏️ Edit student details inline
+👀 View student details
+❌ Delete students
+🔄 Real-time API updates
+⚡ Clean UI with Tailwind CSS
 🛠️ Tech Stack
 
-Backend: Node.js, Express
+Backend
 
-Database: MongoDB (Mongoose)
+Node.js
+Express
+MongoDB (Mongoose)
+Swagger (swagger-ui-express, swagger-jsdoc)
+dotenv
+Nodemon
 
-API Docs: Swagger (swagger-ui-express, swagger-jsdoc)
+Frontend
 
-Tools: Nodemon, dotenv
-
+React (Hooks)
+Axios
+Tailwind CSS
 📁 Project Structure
 student-management/
 │
-├── config/          # Database connection
-├── controllers/     # Handles logic
-├── models/          # Mongoose schemas
-├── routes/          # API routes
-├── docs/            # Swagger configuration
-├── .env             # Environment variables
-├── server.js        # Entry point
-└── package.json
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the repository
-
-```
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── docs/
+│   ├── server.js
+│   ├── .env
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   └── package.json
+⚙️ Installation & Setup
+1️⃣ Clone the repository
 git clone https://github.com/your-username/student-management.git
 cd student-management
-```
-
-### 2. Install dependencies
+2️⃣ Backend Setup
+cd backend
 npm install
-
-### 3. Setup environment variables
-
-Create a `.env` file:
+🔐 Create .env
 MONGO_URI=mongodb://127.0.0.1:27017/studentDB
 PORT=5000
-
-### 4. Install nodemon (if not installed globally)
-npm install -g nodemon
-OR as a dev dependency:
-npm install --save-dev nodemon
-### 5. Run the server (Development)
+▶️ Run Backend
 npm run dev
-👉 Make sure your `package.json` includes:
-"scripts": {
-  "dev": "nodemon server.js"
-}
-### 6. Run without nodemon (Production)
-node server.js
-
-
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
 📡 API Endpoints
-
+Method	Endpoint	Description
 POST	/api/students	Create a student
 GET	/api/students	Get all students
-GET	/api/students/	Get single student
-PUT	/api/students/	Update student
-DELETE	/api/students/	Delete student
+GET	/api/students/:id	Get single student
+PUT	/api/students/:id	Update student
+DELETE	/api/students/:id	Delete student
 🧪 Testing the API
 
-You can test the API using:
+You can test using:
 
-Swagger UI
+🧾 Swagger UI
+👉 http://localhost:5000/api-docs
+🧪 Postman / Insomnia
+🌐 Browser (GET requests only)
+📚 Swagger Preview
 
-http://localhost:5000/api-docs
+Once the backend is running, access:
 
-Postman or Insomnia
+👉 http://localhost:5000/api-docs
 
-Browser (GET requests only)
+This provides a visual API interface where you can:
 
-📦 Example Request (POST)
+Test endpoints
+View request/response formats
+Explore your API easily
+🌐 Frontend Preview
+
+Run the frontend and open:
+
+👉 http://localhost:5173
+ (or your Vite port)
+
+UI Features:
+Add student form
+Student list
+Edit & delete actions
+Real-time updates
+📦 Example Request
+➕ Create Student
 POST /api/students
+
 {
   "name": "Krif",
   "age": 17,
   "course": "Backend Development"
 }
-📊 Database View
-
-Use MongoDB Compass to:
-
-View students collection
-
-Insert documents manually
-
-Edit or delete records
-
 💡 Future Improvements
-
 🔐 Authentication (JWT)
-
-🧑‍🤝‍🧑 User roles (Admin/Student)
-
-📁 File upload (profile images)
-
-💬 Real-time features (chat)
-
+🧑‍🤝‍🧑 Role-based access (Admin/Student)
+📁 File uploads (profile images)
 📊 Dashboard analytics
-
+💬 Real-time chat
 👨‍💻 Author
 
 Krif
 Aspiring Full-Stack Developer 🚀
 
-⭐️ Support
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+Create your feature branch
+Commit changes
+Open a Pull Request
+⭐ Support
 
 If you like this project:
 
-⭐ Star the repository
-
+⭐ Star the repo
 🍴 Fork it
-
 🛠️ Contribute
-
 📜 License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.
