@@ -13,13 +13,13 @@ It demonstrates RESTful API development, CRUD operations, and clean UI integrati
 📊 Frontend UI Preview
 
 <p align="center">
-  <img src="./assets/frontend-preview.png" alt="Frontend Preview" width="800" />
+  <img src="./frontend.png" alt="Frontend Preview" width="50%" />
 </p>
 
 📚 Swagger API Preview
 
 <p align="center">
-  <img src="./assets/frontend-preview.png" alt="Frontend Preview" width="800" />
+  <img src="./swagger.png" alt="Frontend Preview" height="50%" />
 </p>
 
 ✨ Features
@@ -215,7 +215,9 @@ POST /api/students
 
 {
   "name": "Krif",
+  
   "age": 17,
+  
   "course": "Backend Development"
 }
 
